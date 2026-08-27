@@ -124,9 +124,9 @@ input {
     font-weight: 600;
     font-size: 0.85rem;
     transition: all 0.3s ease;
-    margin-top: auto;
-    margin-bottom: auto;
-    align-self: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .lang-btn:hover {
