@@ -143,7 +143,6 @@ input {
 .brand-logo img {
     height: 60px;
     width: auto;
-    max-width: 200px;
     display: block;
 }
 
