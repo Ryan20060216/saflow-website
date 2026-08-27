@@ -93,7 +93,7 @@ const translations = {
         'about.point1.desc': 'Experienced trade experts providing professional consulting services',
         'about.point2.title': 'Market Expansion',
         'about.point2.desc': 'Helping clients explore global markets and find best business opportunities',
-        'about.footer': 'Saflow International is committed to providing the highest quality international trade services. We believe that good cooperation is built on mutual trust and共同成长.',
+        'about.footer': 'Saflow International is committed to providing the highest quality international trade services. We believe that good cooperation is built on mutual trust and shared growth.',
         'stats.1': 'Years Experience',
         'stats.2': 'Partner Countries',
         'stats.3': 'Trade Cases',

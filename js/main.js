@@ -1,8 +1,14 @@
 // Main JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile navigation toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+    const navToggle = document.querySelector('.navbar-toggler');
+    const navMenu = document.querySelector('.navbar-collapse');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('show');
+        });
+    }
 
     // Language switch button
     const langToggle = document.getElementById('lang-toggle');
@@ -21,18 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth' });
+                // Close mobile menu if open
+                if (navMenu && navMenu.classList.contains('show')) {
+                    navMenu.classList.remove('show');
+                }
             }
         });
-    });
-
-    // Header scroll effect
-    const header = document.querySelector('.site-header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
     });
 
     // Active nav link on scroll
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            if (scrollY >= sectionTop - 200) {
+            if (window.scrollY >= sectionTop - 200) {
                 current = section.getAttribute('id');
             }
         });
