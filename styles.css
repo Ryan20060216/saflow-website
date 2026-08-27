@@ -136,8 +136,8 @@ input {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 10px 0;
-    min-height: 120px;
+    padding: 15px 0;
+    min-height: 140px;
 }
 
 .brand-logo img {
@@ -179,6 +179,11 @@ input {
     
     .brand-logo img {
         height: 80px;
+    }
+    
+    .brand-logo {
+        padding: 15px 0;
+        min-height: 140px;
     }
 }
 
