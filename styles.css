@@ -139,7 +139,7 @@ input {
 }
 
 .brand-logo img {
-    height: 45px;
+    height: 35px;
     width: auto;
     object-fit: contain;
 }
@@ -175,7 +175,7 @@ input {
     }
     
     .brand-logo img {
-        height: 35px;
+        height: 28px;
     }
 }
 
