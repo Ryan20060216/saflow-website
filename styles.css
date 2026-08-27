@@ -48,7 +48,7 @@ p {
 }
 
 .banner-content {
-    padding-top: 14rem;
+    padding-top: 18rem;
 }
 
 .banner-content h1 {
@@ -136,12 +136,12 @@ input {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 15px 0;
-    min-height: 140px;
+    padding: 20px 0;
+    min-height: 240px;
 }
 
 .brand-logo img {
-    height: 100px;
+    height: 200px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -178,12 +178,12 @@ input {
     }
     
     .brand-logo img {
-        height: 80px;
+        height: 150px;
     }
     
     .brand-logo {
-        padding: 15px 0;
-        min-height: 140px;
+        padding: 20px 0;
+        min-height: 200px;
     }
 }
 
