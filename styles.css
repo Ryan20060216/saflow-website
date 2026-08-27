@@ -136,11 +136,13 @@ input {
     display: flex;
     align-items: center;
     cursor: pointer;
+    padding: 5px 0;
 }
 
 .brand-logo img {
-    height: 35px;
+    height: 55px;
     width: auto;
+    max-width: 150px;
     object-fit: contain;
 }
 
@@ -175,7 +177,8 @@ input {
     }
     
     .brand-logo img {
-        height: 28px;
+        height: 40px;
+        max-width: 100px;
     }
 }
 
