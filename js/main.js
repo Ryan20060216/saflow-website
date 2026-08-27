@@ -20,6 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Logo button - scroll to top
+    const brandLogo = document.querySelector('.brand-logo');
+    if (brandLogo) {
+        brandLogo.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
