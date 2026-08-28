@@ -178,7 +178,7 @@ input {
 }
 
 .brand-logo img {
-    height: 60px;
+    height: 40px;
     width: auto;
     display: block;
 }
@@ -214,8 +214,8 @@ input {
     }
     
     .brand-logo img {
-        height: 60px;
-        max-width: 150px;
+        height: 40px;
+        max-width: 120px;
     }
     
     .brand-logo {
