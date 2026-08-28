@@ -62,6 +62,37 @@ p {
     z-index: 2;
 }
 
+/* Feature cards styling */
+.feature-card {
+    background: white;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border-bottom: 4px solid transparent;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-bottom: 4px solid var(--blue);
+    box-shadow: 0 12px 40px rgba(16, 110, 234, 0.15);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--blue) 0%, #4a9eff 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
 .about {
     background-color: var(--bg);
 }
