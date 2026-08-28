@@ -218,8 +218,8 @@ input {
     }
 }
 
-.hero-btn .btn {
-    min-width: 140px;
+.hero-btn {
+    margin-top: 2rem !important;
 }
 
 @media(max-width:768px) {
