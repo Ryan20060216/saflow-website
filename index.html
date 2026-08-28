@@ -36,6 +36,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Language button always visible -->
+        <button class="lang-btn ms-3 d-none d-lg-flex" id="lang-toggle" style="height:36px;">EN</button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item">
@@ -50,8 +53,9 @@
             <li class="nav-item ps-lg-4">
               <a class="nav-link" href="#contact" data-i18n="nav.contact">聯絡我們</a>
             </li>
-            <li class="nav-item ps-lg-4">
-              <button class="lang-btn" id="lang-toggle">EN</button>
+            <li class="nav-item ps-lg-4 d-lg-none">
+              <!-- Mobile only: show EN button inside menu -->
+              <button class="lang-btn w-100" id="lang-toggle-mobile">EN</button>
             </li>
           </ul>
         </div>
