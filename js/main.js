@@ -33,9 +33,18 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const targetId = this.getAttribute('href');
+            const target = document.querySelector(targetId);
             if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
+                // 計算固定導航列的高度，加入偏移
+                const navHeight = document.querySelector('header')?.offsetHeight || 120;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                
                 // Close mobile menu if open
                 if (navMenu && navMenu.classList.contains('show')) {
                     navMenu.classList.remove('show');
