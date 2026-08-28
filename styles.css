@@ -219,7 +219,7 @@ input {
 }
 
 .hero-btn {
-    margin-top: 2rem !important;
+    margin-top: 4rem !important;
 }
 
 @media(max-width:768px) {
