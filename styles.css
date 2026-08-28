@@ -149,23 +149,35 @@ input {
 }
 
 .lang-btn {
-    padding: 0.3rem 0.6rem;
-    border: 2px solid var(--blue);
-    background: transparent;
-    color: var(--blue);
-    border-radius: 4px;
+    padding: 0.35rem 0.75rem;
+    border: none;
+    background: linear-gradient(135deg, var(--blue) 0%, #4a9eff 100%);
+    color: white;
+    border-radius: 20px;
     cursor: pointer;
     font-weight: 600;
     font-size: 0.85rem;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 8px rgba(16, 110, 234, 0.3);
     height: 100%;
 }
 
 .lang-btn:hover {
-    background: var(--blue);
-    color: white;
+    background: linear-gradient(135deg, #0d5ec7 0%, #3a8eef 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(16, 110, 234, 0.4);
+}
+
+.lang-btn:active {
+    transform: translateY(0);
+}
+
+.lang-btn::before {
+    content: '🌐';
+    font-size: 0.9rem;
 }
 
 /* Logo button styling */
