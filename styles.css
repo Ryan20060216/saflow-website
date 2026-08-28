@@ -178,7 +178,7 @@ input {
 }
 
 .brand-logo img {
-    height: 40px;
+    height: 32px;
     width: auto;
     display: block;
 }
@@ -190,8 +190,8 @@ input {
 /* 手機版 Logo */
 @media(max-width:768px) {
     .brand-logo img {
-        height: 32px;
-        max-width: 136px;
+        height: 26px;
+        max-width: 110px;
     }
     .brand-logo {
         padding: 3px 0;
