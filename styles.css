@@ -48,7 +48,7 @@ p {
 }
 
 .banner-content {
-    padding-top: 10rem;
+    padding-top: 7rem;
 }
 
 .banner-content h1 {
@@ -57,7 +57,7 @@ p {
 }
 
 .banner-box {
-    margin-top: -50px;
+    margin-top: -20px;
     position: relative;
     z-index: 2;
 }
