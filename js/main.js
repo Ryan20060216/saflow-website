@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Language switch button
-    const langToggle = document.getElementById('lang-toggle') || document.getElementById('lang-toggle-mobile');
+    const langToggle = document.getElementById('lang-toggle-top') || document.getElementById('lang-toggle') || document.getElementById('lang-toggle-mobile');
     if (langToggle) {
         langToggle.addEventListener('click', function() {
             const currentLang = localStorage.getItem('lang') || 'zh';
