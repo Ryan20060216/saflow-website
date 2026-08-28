@@ -102,6 +102,12 @@ p {
 .mini-title {
     background-color: #c3dddbb2;
     width: 120px;
+    padding: 0.5rem 1rem;
+}
+
+.mini-title span {
+    font-size: 1rem;
+    letter-spacing: 2px;
 }
 
 .kachalo span {
