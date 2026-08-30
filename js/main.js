@@ -11,14 +11,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Language switch button
+    function updateLangButtons(lang) {
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.textContent = lang === 'zh' ? 'EN' : '中文';
+        });
+    }
+
     const langToggle = document.getElementById('lang-toggle-top') || document.getElementById('lang-toggle') || document.getElementById('lang-toggle-mobile');
     if (langToggle) {
         langToggle.addEventListener('click', function() {
             const currentLang = localStorage.getItem('lang') || 'zh';
             const newLang = currentLang === 'zh' ? 'en' : 'zh';
             setLanguage(newLang);
+            updateLangButtons(newLang);
         });
     }
+
+    // Init button text on load
+    updateLangButtons(localStorage.getItem('lang') || 'zh');
 
     // Logo button - scroll to top
     const brandLogo = document.querySelector('.brand-logo');
