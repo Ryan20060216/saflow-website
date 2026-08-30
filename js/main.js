@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (target) {
                 // 計算固定導航列的高度，加入偏移
                 const navHeight = document.querySelector('header')?.offsetHeight || 120;
-                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 100;
+                const targetPosition = target.offsetTop - navHeight - 100;
                 
                 window.scrollTo({
                     top: targetPosition,
